@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import './PesquisaAtleta.css';
 
-function PesquisaAtleta({ onResultados }) {
+function PesquisaAtleta({ onResultados, onSearchExecuted }) {
   const [novaBusca, setNovaBusca] = useState('');
 
   const buscar = (e) => {
@@ -28,7 +28,9 @@ function PesquisaAtleta({ onResultados }) {
       }
     } catch (error) {
       console.error("Unable to fetch data:", error);
-    }
+    } finally {
+        onSearchExecuted();
+      }
   };
 
   return (
