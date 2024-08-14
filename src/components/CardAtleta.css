@@ -1,0 +1,27 @@
+.card-atleta {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    background-color: #f9f9f9;
+    max-width: 300px;
+    margin: 50px auto;
+}
+
+.imagem-atleta {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-atleta h2 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.card-atleta p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #555;
+}
