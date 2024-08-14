@@ -27,7 +27,7 @@ function PesquisaAtleta({ onResultados, onSearchExecuted }) {
         onResultados(data.player);
       }
     } catch (error) {
-      console.error("Unable to fetch data:", error);
+      console.error("Não é possível obter dados:", error);
     } finally {
         onSearchExecuted();
       }
