@@ -1,7 +1,7 @@
 import React from "react";
 import './CardAtleta.css';
 
-function CardAtleta({ atleta }) {
+function CardAtleta({ atleta, onFavoritar, isFavorito }) {
   return (
     <div className="card-atleta">
       <img src={atleta.strThumb} alt={atleta.strPlayer} className="imagem-atleta" />
@@ -11,6 +11,14 @@ function CardAtleta({ atleta }) {
       <p>Nacionalidade: {atleta.strNationality}</p>
       <p>Data de Nascimento: {atleta.dateBorn}</p>
       <p>Instagram: {atleta.strInstagram}</p>
+      <button 
+        onClick={() => {
+          console.log(`${isFavorito ? 'Removendo' : 'Adicionando'} atleta aos favoritos:`, atleta);
+          onFavoritar(atleta);
+        }}
+      >
+        {isFavorito ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos'}
+      </button>
     </div>
   );
 }
