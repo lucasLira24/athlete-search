@@ -47,7 +47,10 @@ function App() {
       />
       <div className="resultados">
         {isSearchExecuted && resultados.length === 0 ? (
-          <p className="semResultados">Nenhum jogador encontrado.</p>
+          <div className="semResultados">
+          <img src="src\assets\searchNotFound.png" alt="Search Not Found" />
+          <p>Nenhum jogador encontrado!</p>
+          </div>
         ) : (
           resultados.map((atleta) => (
             <div key={atleta.idPlayer} className="card-container">
@@ -56,7 +59,9 @@ function App() {
           ))
         )}
       </div>
+      <div className="favoritos">
       <PainelFavoritos favoritos={favoritos} onRemoverFavorito={removerFavorito}/>
+      </div>
     </div>
   );
 }

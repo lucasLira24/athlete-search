@@ -1,5 +1,5 @@
 .painel-favoritos {
-    background: white;
+    background: rgb(235, 234, 234);
     padding: 30px;
     margin: 50px auto;
     max-width: 900px;
@@ -9,20 +9,37 @@
   }
   
   .painel-favoritos h2 {
-    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
     margin-bottom: 20px;
-    color: #333;
+    color: #272727;
   }
   
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  .card-container {
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    width: 100%;                
+    max-width: 250px;          
+    margin: 10px;              
   }
   
   .cards-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #272727;
+  }
+
+  .favoritos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .favoritos-container p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    color: #666;
+    color: #272727;
   }
   

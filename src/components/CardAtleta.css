@@ -1,43 +1,46 @@
 .card-atleta {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px;
-    text-align: center;
-    background-color: #f9f9f9;
-    max-width: 300px;
-    margin: 20px auto;
-  }
-  
-  .imagem-atleta {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .card-atleta h2 {
-    font-size: 20px;
-    margin: 8px 0;
-  }
-  
-  .card-atleta p {
-    margin: 4px 0;
-    font-size: 14px;
-    color: #555;
-  }
-  
-  .card-atleta button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .card-atleta button:hover {
-    background-color: #0056b3;
-  }
-  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #e7f7de;
+  max-width: 250px;           /* Define a largura máxima do card */
+  box-sizing: border-box;    /* Inclui o padding e a borda na largura e altura totais */
+}
+
+.imagem-atleta {
+  width: 100%;                /* Ajusta a largura da imagem para preencher o card */
+  height: 150px;              /* Define uma altura fixa para a imagem */
+  object-fit: cover;          /* Faz a imagem cobrir o contêiner sem distorção */
+  border-radius: 8px;
+}
+
+.card-atleta h2 {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 8px 0;
+}
+
+.card-atleta p {
+  text-align: justify;
+  margin: 4px 0;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #272727;
+}
+
+.card-atleta button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #b8babc;
+  color: #272727;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card-atleta button:hover {
+  background-color: #018749;
+  color: whitesmoke;
+}
