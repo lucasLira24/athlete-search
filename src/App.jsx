@@ -4,7 +4,7 @@ import PesquisaAtleta from './components/PesquisaAtleta';
 import CardAtleta from './components/CardAtleta';
 import PainelFavoritos from './components/PainelFavoritos';
 import searchNotFound from './assets/searchNotFound.png';
-import Banner from './components/Banner';
+import Banner from './components/Banner.jsx';
 
 
 function App() {
