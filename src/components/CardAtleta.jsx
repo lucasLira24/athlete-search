@@ -14,7 +14,7 @@ function CardAtleta({ atleta, onFavoritar, isFavorito }) {
       <button 
         onClick={() => {
           console.log(`${isFavorito ? 'Removendo' : 'Adicionando'} atleta aos favoritos:`, atleta);
-          onFavoritar(atleta);
+          onFavoritar(atleta);  
         }}
       >
         {isFavorito ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos'}

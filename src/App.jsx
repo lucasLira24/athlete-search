@@ -3,6 +3,9 @@ import './App.css';
 import PesquisaAtleta from './components/PesquisaAtleta';
 import CardAtleta from './components/CardAtleta';
 import PainelFavoritos from './components/PainelFavoritos';
+import searchNotFound from './assets/searchNotFound.png';
+import Banner from './components/Banner';
+
 
 function App() {
   const [resultados, setResultados] = useState([]);
@@ -41,6 +44,7 @@ function App() {
 
   return (
     <div className="App">
+      <Banner/>
       <PesquisaAtleta
         onResultados={setResultados}
         onSearchExecuted={() => setIsSearchExecuted(true)}
@@ -48,7 +52,7 @@ function App() {
       <div className="resultados">
         {isSearchExecuted && resultados.length === 0 ? (
           <div className="semResultados">
-          <img src="src\assets\searchNotFound.png" alt="Search Not Found" />
+          <img src= {searchNotFound} alt="Search Not Found" />
           <p>Nenhum jogador encontrado!</p>
           </div>
         ) : (

@@ -1,5 +1,5 @@
 # Sistemas de Informação
-![image](src\assets\logoIf.png)
+![logoIF](https://github.com/user-attachments/assets/fffe6c6c-f0ad-4552-8d55-deee8dd6cede)
 
 Atividade avaliativa apresentada a disciplina de Sistemas Web I
 ---

@@ -1,4 +1,4 @@
-import bannerImage from './assets/banner.png';
+import bannerImage from '../assets/banner.png';
 
 function Banner() {
     return (
@@ -8,5 +8,4 @@ function Banner() {
     );
   }
   
-  export default Banner;
-  
+export default Banner;
