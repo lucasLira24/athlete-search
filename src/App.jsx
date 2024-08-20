@@ -60,7 +60,8 @@ function App() {
         ) : (
           resultados.map((atleta) => (
             <div key={atleta.idPlayer} className="card-container">
-              <CardAtleta atleta={atleta} onFavoritar={adicionarFavorito} isFavorito={favoritos.some(fav => fav.idPlayer === atleta.idPlayer)} />
+              <CardAtleta atleta={atleta}  onFavoritar={favoritos.some(fav => fav.idPlayer === atleta.idPlayer) ? removerFavorito : adicionarFavorito} 
+ isFavorito={favoritos.some(fav => fav.idPlayer === atleta.idPlayer)} />
             </div>
           ))
         )}
