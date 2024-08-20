@@ -24,7 +24,7 @@ function PesquisaAtleta({ onResultados, onSearchExecuted }) {
         console.log("Nenhum jogador encontrado");
         onResultados([]);
       } else {
-        onResultados(data.player);
+        onResultados(data.player.slice(0, 10));
       }
     } catch (error) {
       console.error("Não é possível obter dados:", error);
@@ -35,7 +35,6 @@ function PesquisaAtleta({ onResultados, onSearchExecuted }) {
 
   return (
     <div className="main">
-      <h1>Pesquisa de Atleta</h1>
       <form onSubmit={pesquisar}>
         <input 
           value={novaBusca}

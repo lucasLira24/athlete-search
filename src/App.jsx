@@ -3,6 +3,9 @@ import './App.css';
 import PesquisaAtleta from './components/PesquisaAtleta';
 import CardAtleta from './components/CardAtleta';
 import PainelFavoritos from './components/PainelFavoritos';
+import searchNotFound from './assets/searchNotFound.png';
+import banner from './assets/banner.png';
+
 
 function App() {
   const [resultados, setResultados] = useState([]);
@@ -41,13 +44,19 @@ function App() {
 
   return (
     <div className="App">
+      <div className="banner">
+        <img src= {banner} alt="banner"/>
+      </div>
       <PesquisaAtleta
         onResultados={setResultados}
         onSearchExecuted={() => setIsSearchExecuted(true)}
       />
       <div className="resultados">
         {isSearchExecuted && resultados.length === 0 ? (
-          <p className="semResultados">Nenhum jogador encontrado.</p>
+          <div className="semResultados">
+          <img src= {searchNotFound} alt="Search Not Found" />
+          <p>Nenhum jogador encontrado!</p>
+          </div>
         ) : (
           resultados.map((atleta) => (
             <div key={atleta.idPlayer} className="card-container">
@@ -56,7 +65,9 @@ function App() {
           ))
         )}
       </div>
+      <div className="favoritos">
       <PainelFavoritos favoritos={favoritos} onRemoverFavorito={removerFavorito}/>
+      </div>
     </div>
   );
 }

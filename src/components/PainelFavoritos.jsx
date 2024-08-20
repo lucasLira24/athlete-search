@@ -12,7 +12,7 @@ function PainelFavoritos({ favoritos, onRemoverFavorito }) {
         <div className="favoritos-container">
           {favoritos.map(atleta => (
             <div key={atleta.idPlayer} className="card-container">
-              <CardAtleta 
+              <CardAtleta
                 atleta={atleta} 
                 onFavoritar={onRemoverFavorito} 
                 isFavorito={true} 
