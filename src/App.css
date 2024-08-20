@@ -50,3 +50,15 @@ margin-bottom: 13px;
   margin: 5px;               
 }
 
+.banner {
+  width: 100%;       
+  height: auto;      
+  display: block;    
+}
+
+.banner img {
+  width: 100%;      
+  height: auto;    
+  display: block;  
+}
+
