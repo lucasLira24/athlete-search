@@ -13,8 +13,7 @@ function CardAtleta({ atleta, onFavoritar, isFavorito }) {
       <p>Nacionalidade: {atleta.strNationality}</p>
       <button 
         onClick={() => {
-          console.log(`${isFavorito ? 'Removendo' : 'Adicionando'} atleta aos favoritos:`, atleta);
-          onFavoritar(atleta);  
+          onFavoritar(atleta);
         }}
       >
         {isFavorito ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos'}
